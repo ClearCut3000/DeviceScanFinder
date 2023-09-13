@@ -11,6 +11,11 @@
 		3665020C2AB068480081142F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665020B2AB068480081142F /* ContentView.swift */; };
 		3665020E2AB0684A0081142F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3665020D2AB0684A0081142F /* Assets.xcassets */; };
 		366502112AB0684A0081142F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366502102AB0684A0081142F /* Preview Assets.xcassets */; };
+		366502182AB068920081142F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366502172AB068920081142F /* OnboardingView.swift */; };
+		366502202AB0A2810081142F /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665021F2AB0A2810081142F /* PaywallView.swift */; };
+		366502222AB0A82F0081142F /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366502212AB0A82F0081142F /* CheckBoxView.swift */; };
+		366502262AB0EACD0081142F /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366502252AB0EACD0081142F /* MainAppView.swift */; };
+		366502282AB0FE0E0081142F /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366502272AB0FE0D0081142F /* ToggleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,14 @@
 		3665020B2AB068480081142F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3665020D2AB0684A0081142F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		366502102AB0684A0081142F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		366502172AB068920081142F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3665021C2AB09E1C0081142F /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		3665021D2AB09E1C0081142F /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		3665021E2AB09E4D0081142F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3665021F2AB0A2810081142F /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		366502212AB0A82F0081142F /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		366502252AB0EACD0081142F /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		366502272AB0FE0D0081142F /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +64,15 @@
 		366502082AB068480081142F /* DeviceScanFinder */ = {
 			isa = PBXGroup;
 			children = (
+				3665021E2AB09E4D0081142F /* Info.plist */,
+				366502192AB096800081142F /* Fonts */,
 				366502092AB068480081142F /* DeviceScanFinderApp.swift */,
 				3665020B2AB068480081142F /* ContentView.swift */,
+				366502172AB068920081142F /* OnboardingView.swift */,
 				3665020D2AB0684A0081142F /* Assets.xcassets */,
 				3665020F2AB0684A0081142F /* Preview Content */,
+				366502292AB1965B0081142F /* PayWallView */,
+				3665022A2AB196710081142F /* MainAppView */,
 			);
 			path = DeviceScanFinder;
 			sourceTree = "<group>";
@@ -65,6 +83,33 @@
 				366502102AB0684A0081142F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		366502192AB096800081142F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3665021D2AB09E1C0081142F /* Rubik-Medium.ttf */,
+				3665021C2AB09E1C0081142F /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		366502292AB1965B0081142F /* PayWallView */ = {
+			isa = PBXGroup;
+			children = (
+				3665021F2AB0A2810081142F /* PaywallView.swift */,
+				366502212AB0A82F0081142F /* CheckBoxView.swift */,
+			);
+			path = PayWallView;
+			sourceTree = "<group>";
+		};
+		3665022A2AB196710081142F /* MainAppView */ = {
+			isa = PBXGroup;
+			children = (
+				366502252AB0EACD0081142F /* MainAppView.swift */,
+				366502272AB0FE0D0081142F /* ToggleView.swift */,
+			);
+			path = MainAppView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366502182AB068920081142F /* OnboardingView.swift in Sources */,
+				366502262AB0EACD0081142F /* MainAppView.swift in Sources */,
+				366502222AB0A82F0081142F /* CheckBoxView.swift in Sources */,
+				366502202AB0A2810081142F /* PaywallView.swift in Sources */,
 				3665020C2AB068480081142F /* ContentView.swift in Sources */,
 				3665020A2AB068480081142F /* DeviceScanFinderApp.swift in Sources */,
+				366502282AB0FE0E0081142F /* ToggleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +320,13 @@
 				DEVELOPMENT_TEAM = CJ7JF497NG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceScanFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +351,13 @@
 				DEVELOPMENT_TEAM = CJ7JF497NG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceScanFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

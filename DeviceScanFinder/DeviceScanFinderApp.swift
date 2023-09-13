@@ -11,7 +11,7 @@ import SwiftUI
 struct DeviceScanFinderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          ContentView(pages: OnboardingPage.pages)
         }
     }
 }
